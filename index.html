@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALthy Theo</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id='theoHeader'>Healthy Theo</div>
+
+    <div class="navbar">
+        <nav id ="navigation">
+            <div class="nav-wrapper">
+                <ul class="brand-logo center">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Testimonies</a></li>
+                    <li><a href="#">Certificates</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<div class="container">
+    
+    <div id="preface">
+        <p>
+            <span>Prow</span> scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast
+            quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon
+            starboard grog black jack gangway rutters.
+            
+            Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a
+            spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry
+            doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.
+        </p>
+    </div>
+
+</div>
+
+    <div class="fixed-action-btn">
+        <a href="https://m.me/109693223703197" target="_blank" rel="noopener noreferrer" class="btn-large">ORDER NOW</a>
+    </div>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+    let nav = document.querySelector('#navigation');
+    let navTop = nav.offsetTop;
+    
+    function stickyNavigation() {
+      if (window.scrollY >= navTop) {
+        document.body.classList.add('fixed-nav');
+      } else {
+        document.body.classList.remove('fixed-nav');
+      }
+    }
+
+    window.addEventListener('scroll', stickyNavigation);
+    </script>
+</body>
+</html>
