@@ -1,12 +1,31 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); */
 
 @font-face {
-    font-family: 'CustomHeading';
+    font-family: 'Lobster';
     src: url('./fonts/Lobster-Regular.ttf') format('embedded-opentype'), /* Internet Explorer */
-    url('./fonts/Lobster-Regular.ttf') format('woff2'), /* Super Modern Browsers */
-    url('./fonts/Lobster-Regular.ttf') format('woff'), /* Pretty Modern Browsers */
-    url('./fonts/Lobster-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-    url('./fonts/Lobster-Regular.ttf') format('svg'); /* Legacy iOS */
+    url('./fonts/Lobster-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('./fonts/Lobster-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Itim';
+    src: url('./fonts/Itim-Regular.ttf') format('embedded-opentype'), /* Internet Explorer */
+    url('./fonts/Itim-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('./fonts/Itim-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Medium.ttf') format('embedded-opentype'), /* Internet Explorer */
+    url('./fonts/Roboto-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+    url('./fonts/Roboto-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Kimberley';
+    src: url('./fonts/kimberley\ bl.ttf') format('embedded-opentype'), /* Internet Explorer */
+    url('./fonts/kimberley-bl.woff') format('woff'), /* Pretty Modern Browsers */
+    url('./fonts/kimberley\ bl.ttf')  format('truetype'); /* Safari, Android, iOS */
 }
 
 body {
@@ -22,8 +41,16 @@ body {
     font-size: min(15vw, 150px);
 }
 
+nav {
+    background-color: #ff6376;
+}
+
+ul a {
+     font-family: 'Kimberley';
+}
+
 nav ul a {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .fixed-nav nav {
@@ -31,6 +58,31 @@ nav ul a {
     top:0;
     z-index: 1;
   }
+
+.sidenav {
+    background-color: #ff8598;
+    color: #4e2e28;
+}
+
+.sidenav li > a {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+li.logo {
+    text-align: center;
+}
+
+#logo-container {
+    height: 100%;
+    width: 100%;
+    padding-top: 15px;
+}
+
+#theoLogo {
+    height: 90%;
+    width: 90%;
+}
 
 .container {
     margin-top: 50px;
@@ -47,7 +99,7 @@ nav ul a {
 #preface p {
     margin: 15px;
     font-size: min(4vw, 24px);
-    font-family: Optima;
+    font-family: 'Roboto';
     line-height: min(5vw, 30px);
 }
 
@@ -57,6 +109,22 @@ nav ul a {
 
 .row .col{
     margin-bottom: 30px;
+}
+
+.card-title {
+    font-family: 'Kimberley';
+}
+
+.card-content {
+    font-family: 'Roboto';
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+    color: #2eb8e6;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover{
+    color: #ff6376;
 }
 
 .btn-large {
