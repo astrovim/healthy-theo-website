@@ -21,7 +21,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
                         <li><a href="#">Testimonies</a></li>
-                        <li><a href="certificates.html">Certificates</a></li>
+                        <li><a href="#">Certificates</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,18 +41,36 @@
     </ul>
 
 <div class="container">
-    
-    <div id="preface">
-        <p>
-            <span>Prow</span> scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast
-            quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon
-            starboard grog black jack gangway rutters.
-            
-            Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a
-            spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry
-            doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.
-        </p>
+
+<h1>Certifications</h1>
+
+    <div class="row">
+        <div class="col s12 m6 l4">
+            <div class="imageContainer">
+                <h4>FDA Certificate</h4>
+                <img src="img/certificates/FDACertificate.jpg" alt="F2NAwards">
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="imageContainer">
+                <h4>HALAL Certificate</h4>
+                <img src="img/certificates/HalalProductCertificate.jpg" alt="Halal Certificate">
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="imageContainer">
+                <h4>License to Operate</h4>
+                <img src="img/certificates/HalalLicenseToOperate.jpg" alt="License To Operate">
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="imageContainer">
+                <h4>Product Certificate</h4>
+                <img src="img/certificates/HalalProductCertificate.jpg" alt="Product Certificate">
+            </div>
+        </div>
     </div>
+
 
 </div>
 
@@ -71,8 +89,10 @@
     
     function stickyNavigation() {
       if (window.scrollY >= navTop) {
+        document.body.style.paddingTop = nav.offsetHeight + 'px';
         document.body.classList.add('fixed-nav');
       } else {
+        document.body.style.paddingTop = 0;
         document.body.classList.remove('fixed-nav');
       }
     }
